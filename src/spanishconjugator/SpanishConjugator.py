@@ -62,7 +62,7 @@ class Conjugator:
                         return c_dt
                     else:
                         return c_dt['result']
-                    
+
             else:
                 # in case no pronoun is passed
                 c_dt = self.conjugate_tense_mood(root_verb, tense, mood, None)
@@ -83,58 +83,58 @@ class Conjugator:
         # --------------------------------- The Indicatives ---------------------------------------- #
 
         # --------------------------------- Present Indicative ------------------------------------- #
-                    if tense == "present":
-                        if mood == "indicative":
-                            c_dt = indicative_present(root_verb, pronoun)
+        if tense == "present":
+            if mood == "indicative":
+                c_dt = indicative_present(root_verb, pronoun)
 
 
         # --------------------------------- Imperfect Indicative ----------------------------------- #
 
-                    if tense == "imperfect":
-                        if mood == "indicative":
-                            c_dt = indicative_imperfect(root_verb, pronoun)
+        if tense == "imperfect":
+            if mood == "indicative":
+                c_dt = indicative_imperfect(root_verb, pronoun)
 
 
         # --------------------------------- Preterite Indicative ----------------------------------- #
 
-                    if tense == "preterite":
-                        if mood == "indicative":
-                            c_dt = indicative_preterite(root_verb, pronoun)
+        if tense == "preterite":
+            if mood == "indicative":
+                c_dt = indicative_preterite(root_verb, pronoun)
 
 
         # --------------------------------- Future Simple Indicative ------------------------------- #
 
-                    if tense == "future":
-                        if mood == "indicative":
-                            c_dt = indicative_future(root_verb, pronoun)
+        if tense == "future":
+            if mood == "indicative":
+                c_dt = indicative_future(root_verb, pronoun)
 
 
         # --------------------------------- Present Perfect Compound Tense -------------------------- #
 
-                    if tense == "present_perfect":
-                        if mood == "indicative":
-                            c_dt = indicative_present_perfect(root_verb, pronoun)
+        if tense == "present_perfect":
+            if mood == "indicative":
+                c_dt = indicative_present_perfect(root_verb, pronoun)
 
 
         # --------------------------------- Past Perfect Compound Tense ----------------------------- #
 
-                    if tense == "past_perfect":
-                        if mood == "indicative":
-                            c_dt = indicative_past_perfect(root_verb, pronoun)
+        if tense == "past_perfect":
+            if mood == "indicative":
+                c_dt = indicative_past_perfect(root_verb, pronoun)
 
 
         # --------------------------------- Past Anterior Compound Tense ---------------------------- #
 
-                    if tense == "past_anterior":
-                        if mood == "indicative":
-                            c_dt = indicative_past_anterior(root_verb, pronoun)
+        if tense == "past_anterior":
+            if mood == "indicative":
+                c_dt = indicative_past_anterior(root_verb, pronoun)
 
 
         # --------------------------------- Future Perfect Compound Tense --------------------------- #
 
-                    if tense == "future_perfect":
-                        if mood == "indicative":
-                            c_dt = indicative_future_perfect(root_verb, pronoun)
+        if tense == "future_perfect":
+            if mood == "indicative":
+                c_dt = indicative_future_perfect(root_verb, pronoun)
 
 
 
@@ -142,83 +142,83 @@ class Conjugator:
 
         #---------------------------------- Simple Conditional -------------------------------------- #
 
-                    if tense == "simple_conditional":
-                        if mood == "conditional":
-                            c_dt = conditional_simple_conditional(root_verb, pronoun)
+        if tense == "simple_conditional":
+            if mood == "conditional":
+                c_dt = conditional_simple_conditional(root_verb, pronoun)
 
 
         #---------------------------------- Perfect Conditional -------------------------------------- #
 
-                    if tense == "perfect":
-                        if mood == "conditional":
-                            c_dt = conditional_perfect(root_verb, pronoun)
+        if tense == "perfect":
+            if mood == "conditional":
+                c_dt = conditional_perfect(root_verb, pronoun)
 
 
         # --------------------------------- The Imperative ----------------------------------------- #
 
         #---------------------------------- Affirmative Imperative -------------------------------------- #
 
-                    if tense == "affirmative":
-                        if mood == "imperative":
-                            c_dt = affirmative(root_verb, pronoun)
+        if tense == "affirmative":
+            if mood == "imperative":
+                c_dt = affirmative(root_verb, pronoun)
 
 
         #---------------------------------- Negative Imperative -------------------------------------- #
 
-                    if tense == "negative":
-                        if mood == "imperative":
-                            c_dt = negative(root_verb, pronoun)
+        if tense == "negative":
+            if mood == "imperative":
+                c_dt = negative(root_verb, pronoun)
 
 
         # --------------------------------- The Subjunctive ----------------------------------------- #
 
         #---------------------------------- Present Subjunctive ------------------------------------- #
 
-                    if tense == "present":
-                        if mood == "subjunctive":
-                            c_dt = subjunctive_present(root_verb, pronoun)
+        if tense == "present":
+            if mood == "subjunctive":
+                c_dt = subjunctive_present(root_verb, pronoun)
 
 
         #---------------------------------- Present Perfect Subjunctive ----------------------------- #
 
-                    if tense == "present_perfect":
-                        if mood == "subjunctive":
-                            c_dt = subjunctive_present_perfect(root_verb, pronoun)
+        if tense == "present_perfect":
+            if mood == "subjunctive":
+                c_dt = subjunctive_present_perfect(root_verb, pronoun)
 
 
         #---------------------------------- Pluperfect Subjunctive ---------------------------------- #
 
-                    if tense == "pluperfect":
-                        if mood == "subjunctive":
-                            c_dt = subjunctive_pluperfect(root_verb, pronoun)
+        if tense == "pluperfect":
+            if mood == "subjunctive":
+                c_dt = subjunctive_pluperfect(root_verb, pronoun)
 
 
         #---------------------------------- Future Perfect Subjunctive ------------------------------ #
 
-                    if tense == "future_perfect":
-                        if mood == "subjunctive":
-                            c_dt = subjunctive_future_perfect(root_verb, pronoun)
+        if tense == "future_perfect":
+            if mood == "subjunctive":
+                c_dt = subjunctive_future_perfect(root_verb, pronoun)
 
 
         #---------------------------------- Imperfect Subjunctive -------------------------------------- #
 
-                    if tense == "imperfect":
-                        if mood == "subjunctive":
-                            c_dt = subjunctive_imperfect(root_verb, pronoun)
+        if tense == "imperfect":
+            if mood == "subjunctive":
+                c_dt = subjunctive_imperfect(root_verb, pronoun)
 
 
         #---------------------------------- imperfect se Subjunctive -------------------------------------- #
 
-                    if tense == "imperfect_se":
-                        if mood == "subjunctive":
-                            c_dt = subjunctive_imperfect_se(root_verb, pronoun)
+        if tense == "imperfect_se":
+            if mood == "subjunctive":
+                c_dt = subjunctive_imperfect_se(root_verb, pronoun)
 
 
         #---------------------------------- Future Subjunctive -------------------------------------- #
 
-                    if tense == "future":
-                        if mood == "subjunctive":
-                            c_dt = subjunctive_future(root_verb, pronoun)
+        if tense == "future":
+            if mood == "subjunctive":
+                c_dt = subjunctive_future(root_verb, pronoun)
 
 
         c_dt["mood"] = mood
