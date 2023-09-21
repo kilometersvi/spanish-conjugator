@@ -5,8 +5,8 @@ with open("README.md", "r") as fh:
 
 setup(
     name="spanishconjugator",
-    version="2.3.5908",
-    description="A python library to conjugate spanish words with parameters tense, mood and pronoun",
+    version="2.3.5909",
+    description="A python library to conjugate spanish words with parameters tense, mood and pronoun. Forked for word metadata",
     packages=[
         "spanishconjugator",
         "spanishconjugator.tenses",
@@ -31,7 +31,7 @@ setup(
     extras_require={
         "dev": ["pytest", "check-manifest", "twine"],
     },
-    url="https://github.com/Benedict-Carling/spanish-conjugator",
+    url="https://github.com/kilometersvi/spanish-conjugator",
     author="Benedict Carling",
     author_email="bencarling1@gmail.com",
 )
