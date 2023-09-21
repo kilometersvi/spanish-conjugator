@@ -3,47 +3,47 @@ def indicative_future_perfect(root_verb, pronoun):
     if pronoun == "yo":
         if root_verb[-2:] == "ar":
             conjugation = root_verb[:-2] + "ado"
-            return "habré " + conjugation
+            return {"result":"habré " + conjugation,"flag":"none","mood":"","tense":"","pronoun":"","root_verb":""}
         if root_verb[-2:] == "er" or "ir":
             conjugation = root_verb[:-2] + "ido"
-            return "habré " + conjugation
+            return {"result":"habré " + conjugation,"flag":"none","mood":"","tense":"","pronoun":"","root_verb":""}
 
     if pronoun == "tu":
         if root_verb[-2:] == "ar":
             conjugation = root_verb[:-2] + "ado"
-            return "habrás " + conjugation
+            return {"result":"habrás " + conjugation,"flag":"none","mood":"","tense":"","pronoun":"","root_verb":""}
         if root_verb[-2:] == "er" or "ir":
             conjugation = root_verb[:-2] + "ido"
-            return "habrás " + conjugation
+            return {"result":"habrás " + conjugation,"flag":"none","mood":"","tense":"","pronoun":"","root_verb":""}
 
     if pronoun == "usted":
         if root_verb[-2:] == "ar":
             conjugation = root_verb[:-2] + "ado"
-            return "habrá " + conjugation
+            return {"result":"habrá " + conjugation,"flag":"none","mood":"","tense":"","pronoun":"","root_verb":""}
         if root_verb[-2:] == "er" or "ir":
             conjugation = root_verb[:-2] + "ido"
-            return "habrá " + conjugation
+            return {"result":"habrá " + conjugation,"flag":"none","mood":"","tense":"","pronoun":"","root_verb":""}
 
     if pronoun == "nosotros":
         if root_verb[-2:] == "ar":
             conjugation = root_verb[:-2] + "ado"
-            return "habremos " + conjugation
+            return {"result":"habremos " + conjugation,"flag":"none","mood":"","tense":"","pronoun":"","root_verb":""}
         if root_verb[-2:] == "er" or "ir":
             conjugation = root_verb[:-2] + "ido"
-            return "habremos " + conjugation
+            return {"result":"habremos " + conjugation,"flag":"none","mood":"","tense":"","pronoun":"","root_verb":""}
 
     if pronoun == "vosotros":
         if root_verb[-2:] == "ar":
             conjugation = root_verb[:-2] + "ado"
-            return "habréis " + conjugation
+            return {"result":"habréis " + conjugation,"flag":"none","mood":"","tense":"","pronoun":"","root_verb":""}
         if root_verb[-2:] == "er" or "ir":
             conjugation = root_verb[:-2] + "ido"
-            return "habréis " + conjugation
+            return {"result":"habréis " + conjugation,"flag":"none","mood":"","tense":"","pronoun":"","root_verb":""}
 
     if pronoun == "ustedes":
         if root_verb[-2:] == "ar":
             conjugation = root_verb[:-2] + "ado"
-            return "habrán " + conjugation
+            return {"result":"habrán " + conjugation,"flag":"none","mood":"","tense":"","pronoun":"","root_verb":""}
         if root_verb[-2:] == "er" or "ir":
             conjugation = root_verb[:-2] + "ido"
-            return "habrán " + conjugation
+            return {"result":"habrán " + conjugation,"flag":"none","mood":"","tense":"","pronoun":"","root_verb":""}

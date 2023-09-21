@@ -3,75 +3,75 @@ from spanishconjugator.irregulars.irregular_dict              import irregulars_
 def conditional_perfect_first_person_singular(root_verb):
     try:
         conjugation = irregulars_dictionary[root_verb]["conditional"]["perfect_conditional"]["yo"]
-        return  {"result":conjugation,"flag":"irregular","mood":"","tense":"","pronoun":"","root_verb":""}
+        return conjugation
     except:
         if root_verb[-2:] == "ar":
             conjugation = root_verb[:-2] + "ado"
-            return {"result":"habría " + conjugation,"flag":"none","mood":"","tense":"","pronoun":"","root_verb":""}
+            return "habría " + conjugation
         if root_verb[-2:] == "er" or "ir":
             conjugation = root_verb[:-2] + "ido"
-            return {"result":"habría " + conjugation,"flag":"none","mood":"","tense":"","pronoun":"","root_verb":""}
+            return "habría " + conjugation
 
 def conditional_perfect_first_person_plural(root_verb):
     try:
         conjugation = irregulars_dictionary[root_verb]["conditional"]["perfect_conditional"]["nosotros"]
-        return  {"result":conjugation,"flag":"irregular","mood":"","tense":"","pronoun":"","root_verb":""}
+        return conjugation
     except:
         if root_verb[-2:] == "ar":
             conjugation = root_verb[:-2] + "ado"
-            return {"result":"habríamos " + conjugation,"flag":"none","mood":"","tense":"","pronoun":"","root_verb":""}
+            return "habríamos " + conjugation
         if root_verb[-2:] == "er" or "ir":
             conjugation = root_verb[:-2] + "ido"
-            return {"result":"habríamos " + conjugation,"flag":"none","mood":"","tense":"","pronoun":"","root_verb":""}
+            return "habríamos " + conjugation
         
 
 def conditional_perfect_second_person_singular(root_verb):
     try:
         conjugation = irregulars_dictionary[root_verb]["conditional"]["perfect_conditional"]["tu"]
-        return  {"result":conjugation,"flag":"irregular","mood":"","tense":"","pronoun":"","root_verb":""}
+        return conjugation
     except:
         if root_verb[-2:] == "ar":
             conjugation = root_verb[:-2] + "ado"
-            return {"result":"habrías " + conjugation,"flag":"none","mood":"","tense":"","pronoun":"","root_verb":""}
+            return "habrías " + conjugation
         if root_verb[-2:] == "er" or "ir":
             conjugation = root_verb[:-2] + "ido"
-            return {"result":"habrías " + conjugation,"flag":"none","mood":"","tense":"","pronoun":"","root_verb":""}
+            return "habrías " + conjugation
 
 def conditional_perfect_second_person_plural(root_verb):
     try:
         conjugation = irregulars_dictionary[root_verb]["conditional"]["perfect_conditional"]["vosotros"]
-        return  {"result":conjugation,"flag":"irregular","mood":"","tense":"","pronoun":"","root_verb":""}
+        return conjugation
     except:
         if root_verb[-2:] == "ar":
             conjugation = root_verb[:-2] + "ado"
-            return {"result":"habríais " + conjugation,"flag":"none","mood":"","tense":"","pronoun":"","root_verb":""}
+            return "habríais " + conjugation
         if root_verb[-2:] == "er" or "ir":
             conjugation = root_verb[:-2] + "ido"
-            return {"result":"habríais " + conjugation,"flag":"none","mood":"","tense":"","pronoun":"","root_verb":""}
+            return "habríais " + conjugation
 
 def conditional_perfect_third_person_singular(root_verb):
     try:
         conjugation = irregulars_dictionary[root_verb]["conditional"]["perfect_conditional"]["usted"]
-        return  {"result":conjugation,"flag":"irregular","mood":"","tense":"","pronoun":"","root_verb":""}
+        return conjugation
     except:
         if root_verb[-2:] == "ar":
             conjugation = root_verb[:-2] + "ado"
-            return {"result":"habría " + conjugation,"flag":"none","mood":"","tense":"","pronoun":"","root_verb":""}
+            return "habría " + conjugation
         if root_verb[-2:] == "er" or "ir":
             conjugation = root_verb[:-2] + "ido"
-            return {"result":"habría " + conjugation,"flag":"none","mood":"","tense":"","pronoun":"","root_verb":""}
+            return "habría " + conjugation
 
 def conditional_perfect_third_person_plural(root_verb):
     try:
         conjugation = irregulars_dictionary[root_verb]["conditional"]["perfect_conditional"]["ustedes"]
-        return  {"result":conjugation,"flag":"irregular","mood":"","tense":"","pronoun":"","root_verb":""}
+        return conjugation
     except:
         if root_verb[-2:] == "ar":
             conjugation = root_verb[:-2] + "ado"
-            return {"result":"habrían " + conjugation,"flag":"none","mood":"","tense":"","pronoun":"","root_verb":""}
+            return "habrían " + conjugation
         if root_verb[-2:] == "er" or "ir":
             conjugation = root_verb[:-2] + "ido"
-            return {"result":"habrían " + conjugation,"flag":"none","mood":"","tense":"","pronoun":"","root_verb":""}
+            return "habrían " + conjugation
 
 def conditional_perfect(root_verb, pronoun):
     if pronoun == "yo":

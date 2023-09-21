@@ -3,74 +3,74 @@ from spanishconjugator.irregulars.irregular_dict              import irregulars_
 def indicative_imperfect_first_person_singular(root_verb):
     try:
         conjugation = irregulars_dictionary[root_verb]["indicative"]["imperfect"]["yo"]
-        return  {"result":conjugation,"flag":"irregular","mood":"","tense":"","pronoun":"","root_verb":""}
+        return conjugation
     except:
         if root_verb[-2:] == "ar":
             conjugation = root_verb[:-2] + "aba"
-            return {"result":conjugation,"flag":"none","mood":"","tense":"","pronoun":"","root_verb":""}
+            return conjugation
         if root_verb[-2:] == "er" or "ir":
             conjugation = root_verb[:-2] + "ía"
-            return {"result":conjugation,"flag":"none","mood":"","tense":"","pronoun":"","root_verb":""}
+            return conjugation
 
 def indicative_imperfect_first_person_plural(root_verb):
     try:
         conjugation = irregulars_dictionary[root_verb]["indicative"]["imperfect"]["nosotros"]
-        return  {"result":conjugation,"flag":"irregular","mood":"","tense":"","pronoun":"","root_verb":""}
+        return conjugation
     except:
         if root_verb[-2:] == "ar":
             conjugation = root_verb[:-2] + "ábamos"
-            return {"result":conjugation,"flag":"none","mood":"","tense":"","pronoun":"","root_verb":""}
+            return conjugation
         if root_verb[-2:] == "er" or "ir":
             conjugation = root_verb[:-2] + "íamos"
-            return {"result":conjugation,"flag":"none","mood":"","tense":"","pronoun":"","root_verb":""}
+            return conjugation
 
 def indicative_imperfect_second_person_singular(root_verb):
     try:
         conjugation = irregulars_dictionary[root_verb]["indicative"]["imperfect"]["tu"]
-        return  {"result":conjugation,"flag":"irregular","mood":"","tense":"","pronoun":"","root_verb":""}
+        return conjugation
     except:
         if root_verb[-2:] == "ar":
             conjugation = root_verb[:-2] + "abas"
-            return {"result":conjugation,"flag":"none","mood":"","tense":"","pronoun":"","root_verb":""}
+            return conjugation
         if root_verb[-2:] == "er" or "ir":
             conjugation = root_verb[:-2] + "ías"
-            return {"result":conjugation,"flag":"none","mood":"","tense":"","pronoun":"","root_verb":""}
+            return conjugation
 
 def indicative_imperfect_second_person_plural(root_verb):
     try:
         conjugation = irregulars_dictionary[root_verb]["indicative"]["imperfect"]["vosotros"]
-        return  {"result":conjugation,"flag":"irregular","mood":"","tense":"","pronoun":"","root_verb":""}
+        return conjugation
     except:
         if root_verb[-2:] == "ar":
             conjugation = root_verb[:-2] + "abais"
-            return {"result":conjugation,"flag":"none","mood":"","tense":"","pronoun":"","root_verb":""}
+            return conjugation
         if root_verb[-2:] == "er" or "ir":
             conjugation = root_verb[:-2] + "íais"
-            return {"result":conjugation,"flag":"none","mood":"","tense":"","pronoun":"","root_verb":""}
+            return conjugation
 
 def indicative_imperfect_third_person_singular(root_verb):
     try:
         conjugation = irregulars_dictionary[root_verb]["indicative"]["imperfect"]["usted"]
-        return  {"result":conjugation,"flag":"irregular","mood":"","tense":"","pronoun":"","root_verb":""}
+        return conjugation
     except:
         if root_verb[-2:] == "ar":
             conjugation = root_verb[:-2] + "aba"
-            return {"result":conjugation,"flag":"none","mood":"","tense":"","pronoun":"","root_verb":""}
+            return conjugation
         if root_verb[-2:] == "er" or "ir":
             conjugation = root_verb[:-2] + "ía"
-            return {"result":conjugation,"flag":"none","mood":"","tense":"","pronoun":"","root_verb":""}
+            return conjugation
 
 def indicative_imperfect_third_person_plural(root_verb):
     try:
         conjugation = irregulars_dictionary[root_verb]["indicative"]["imperfect"]["ustedes"]
-        return  {"result":conjugation,"flag":"irregular","mood":"","tense":"","pronoun":"","root_verb":""}
+        return conjugation
     except:
         if root_verb[-2:] == "ar":
             conjugation = root_verb[:-2] + "aban"
-            return {"result":conjugation,"flag":"none","mood":"","tense":"","pronoun":"","root_verb":""}
+            return conjugation
         if root_verb[-2:] == "er" or "ir":
             conjugation = root_verb[:-2] + "ían"
-            return {"result":conjugation,"flag":"none","mood":"","tense":"","pronoun":"","root_verb":""}
+            return conjugation
 
 def indicative_imperfect(root_verb, pronoun):
     if pronoun == "yo":

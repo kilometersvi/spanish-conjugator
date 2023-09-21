@@ -3,56 +3,56 @@ from spanishconjugator.irregulars.irregular_dict              import irregulars_
 def indicative_future_first_person_singular(root_verb):
     try:
         conjugation = irregulars_dictionary[root_verb]["indicative"]["future"]["yo"]
-        return  {"result":conjugation,"flag":"irregular","mood":"","tense":"","pronoun":"","root_verb":""}
+        return conjugation
     except:
         if root_verb[-2:] == "ar" or "er" or "ir":
             conjugation = root_verb + "é"
-            return {"result":conjugation,"flag":"none","mood":"","tense":"","pronoun":"","root_verb":""}
+            return conjugation
 
 def indicative_future_first_person_plural(root_verb):
     try:
         conjugation = irregulars_dictionary[root_verb]["indicative"]["future"]["nosotros"]
-        return  {"result":conjugation,"flag":"irregular","mood":"","tense":"","pronoun":"","root_verb":""}
+        return conjugation
     except:
         if root_verb[-2:] == "ar" or "er" or "ir":
             conjugation = root_verb + "emos"
-            return {"result":conjugation,"flag":"none","mood":"","tense":"","pronoun":"","root_verb":""}
+            return conjugation
 
 def indicative_future_second_person_singular(root_verb):
     try:
         conjugation = irregulars_dictionary[root_verb]["indicative"]["future"]["tu"]
-        return  {"result":conjugation,"flag":"irregular","mood":"","tense":"","pronoun":"","root_verb":""}
+        return conjugation
     except:
         if root_verb[-2:] == "ar" or "er" or "ir":
             conjugation = root_verb + "ás"
-            return {"result":conjugation,"flag":"none","mood":"","tense":"","pronoun":"","root_verb":""}
+            return conjugation
 
 def indicative_future_second_person_plural(root_verb):
     try:
         conjugation = irregulars_dictionary[root_verb]["indicative"]["future"]["vosotros"]
-        return  {"result":conjugation,"flag":"irregular","mood":"","tense":"","pronoun":"","root_verb":""}
+        return conjugation
     except:
         if root_verb[-2:] == "ar" or "er" or "ir":
             conjugation = root_verb + "éis"
-            return {"result":conjugation,"flag":"none","mood":"","tense":"","pronoun":"","root_verb":""}
+            return conjugation
 
 def indicative_future_third_person_singular(root_verb):
     try:
         conjugation = irregulars_dictionary[root_verb]["indicative"]["future"]["usted"]
-        return  {"result":conjugation,"flag":"irregular","mood":"","tense":"","pronoun":"","root_verb":""}
+        return conjugation
     except:
         if root_verb[-2:] == "ar" or "er" or "ir":
             conjugation = root_verb + "á"
-            return {"result":conjugation,"flag":"none","mood":"","tense":"","pronoun":"","root_verb":""}
+            return conjugation
 
 def indicative_future_third_person_plural(root_verb):
     try:
         conjugation = irregulars_dictionary[root_verb]["indicative"]["future"]["ustedes"]
-        return  {"result":conjugation,"flag":"irregular","mood":"","tense":"","pronoun":"","root_verb":""}
+        return conjugation
     except:
         if root_verb[-2:] == "ar" or "er" or "ir":
             conjugation = root_verb + "án"
-            return {"result":conjugation,"flag":"none","mood":"","tense":"","pronoun":"","root_verb":""}
+            return conjugation
 
 def indicative_future(root_verb, pronoun):
     if pronoun == "yo":

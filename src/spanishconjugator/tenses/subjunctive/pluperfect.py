@@ -3,47 +3,47 @@ def subjunctive_pluperfect(root_verb, pronoun):
     if pronoun == "yo":
         if root_verb[-2:] == "ar":
             conjugation = root_verb[:-2] + "ado"
-            return "hubiera " + conjugation
+            return {"result":"hubiera " + conjugation,"flag":"none","mood":"","tense":"","pronoun":"","root_verb":""}
         if root_verb[-2:] == "er" or "ir":
             conjugation = root_verb[:-2] + "ido"
-            return "hubiera " + conjugation
+            return {"result":"hubiera " + conjugation,"flag":"none","mood":"","tense":"","pronoun":"","root_verb":""}
 
     if pronoun == "tu":
         if root_verb[-2:] == "ar":
             conjugation = root_verb[:-2] + "ado"
-            return "hubieras " + conjugation
+            return {"result":"hubieras " + conjugation,"flag":"none","mood":"","tense":"","pronoun":"","root_verb":""}
         if root_verb[-2:] == "er" or "ir":
             conjugation = root_verb[:-2] + "ido"
-            return "hubieras " + conjugation
+            return {"result":"hubieras " + conjugation,"flag":"none","mood":"","tense":"","pronoun":"","root_verb":""}
 
     if pronoun == "usted":
         if root_verb[-2:] == "ar":
             conjugation = root_verb[:-2] + "ado"
-            return "hubiera " + conjugation
+            return {"result":"hubiera " + conjugation,"flag":"none","mood":"","tense":"","pronoun":"","root_verb":""}
         if root_verb[-2:] == "er" or "ir":
             conjugation = root_verb[:-2] + "ido"
-            return "hubiera " + conjugation
+            return {"result":"hubiera " + conjugation,"flag":"none","mood":"","tense":"","pronoun":"","root_verb":""}
 
     if pronoun == "nosotros":
         if root_verb[-2:] == "ar":
             conjugation = root_verb[:-2] + "ado"
-            return "hubiéramos " + conjugation
+            return {"result":"hubiéramos " + conjugation,"flag":"none","mood":"","tense":"","pronoun":"","root_verb":""}
         if root_verb[-2:] == "er" or "ir":
             conjugation = root_verb[:-2] + "ido"
-            return "hubiéramos " + conjugation
+            return {"result":"hubiéramos " + conjugation,"flag":"none","mood":"","tense":"","pronoun":"","root_verb":""}
 
     if pronoun == "vosotros":
         if root_verb[-2:] == "ar":
             conjugation = root_verb[:-2] + "ado"
-            return "hubierais " + conjugation
+            return {"result":"hubierais " + conjugation,"flag":"none","mood":"","tense":"","pronoun":"","root_verb":""}
         if root_verb[-2:] == "er" or "ir":
             conjugation = root_verb[:-2] + "ido"
-            return "hubierais " + conjugation
+            return {"result":"hubierais " + conjugation,"flag":"none","mood":"","tense":"","pronoun":"","root_verb":""}
 
     if pronoun == "ustedes":
         if root_verb[-2:] == "ar":
             conjugation = root_verb[:-2] + "ado"
-            return "hubieran " + conjugation
+            return {"result":"hubieran " + conjugation,"flag":"none","mood":"","tense":"","pronoun":"","root_verb":""}
         if root_verb[-2:] == "er" or "ir":
             conjugation = root_verb[:-2] + "ido"
-            return "hubieran " + conjugation
+            return {"result":"hubieran " + conjugation,"flag":"none","mood":"","tense":"","pronoun":"","root_verb":""}

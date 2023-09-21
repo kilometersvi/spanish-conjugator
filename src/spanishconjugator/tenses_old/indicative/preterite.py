@@ -3,74 +3,74 @@ from spanishconjugator.irregulars.irregular_dict              import irregulars_
 def indicative_preterite_first_person_singular(root_verb):
     try:
         conjugation = irregulars_dictionary[root_verb]["indicative"]["preterite"]["yo"]
-        return  {"result":conjugation,"flag":"irregular","mood":"","tense":"","pronoun":"","root_verb":""}
+        return conjugation
     except:
         if root_verb[-2:] == "ar":
             conjugation = root_verb[:-2] + "é"
-            return {"result":conjugation,"flag":"none","mood":"","tense":"","pronoun":"","root_verb":""}
+            return conjugation
         if root_verb[-2:] == "er" or "ir":
             conjugation = root_verb[:-2] + "í"
-            return {"result":conjugation,"flag":"none","mood":"","tense":"","pronoun":"","root_verb":""}
+            return conjugation
 
 def indicative_preterite_first_person_plural(root_verb):
     try:
         conjugation = irregulars_dictionary[root_verb]["indicative"]["preterite"]["nosotros"]
-        return  {"result":conjugation,"flag":"irregular","mood":"","tense":"","pronoun":"","root_verb":""}
+        return conjugation
     except:
         if root_verb[-2:] == "ar":
             conjugation = root_verb[:-2] + "amos"
-            return {"result":conjugation,"flag":"none","mood":"","tense":"","pronoun":"","root_verb":""}
+            return conjugation
         if root_verb[-2:] == "er" or "ir":
             conjugation = root_verb[:-2] + "imos"
-            return {"result":conjugation,"flag":"none","mood":"","tense":"","pronoun":"","root_verb":""}
+            return conjugation
 
 def indicative_preterite_second_person_singular(root_verb):
     try:
         conjugation = irregulars_dictionary[root_verb]["indicative"]["preterite"]["tu"]
-        return  {"result":conjugation,"flag":"irregular","mood":"","tense":"","pronoun":"","root_verb":""}
+        return conjugation
     except:
         if root_verb[-2:] == "ar":
             conjugation = root_verb[:-2] + "aste"
-            return {"result":conjugation,"flag":"none","mood":"","tense":"","pronoun":"","root_verb":""}
+            return conjugation
         if root_verb[-2:] == "er" or "ir":
             conjugation = root_verb[:-2] + "iste"
-            return {"result":conjugation,"flag":"none","mood":"","tense":"","pronoun":"","root_verb":""}
+            return conjugation
 
 def indicative_preterite_second_person_plural(root_verb):
     try:
         conjugation = irregulars_dictionary[root_verb]["indicative"]["preterite"]["vosotros"]
-        return  {"result":conjugation,"flag":"irregular","mood":"","tense":"","pronoun":"","root_verb":""}
+        return conjugation
     except:
         if root_verb[-2:] == "ar":
             conjugation = root_verb[:-2] + "asteis"
-            return {"result":conjugation,"flag":"none","mood":"","tense":"","pronoun":"","root_verb":""}
+            return conjugation
         if root_verb[-2:] == "er" or "ir":
             conjugation = root_verb[:-2] + "isteis"
-            return {"result":conjugation,"flag":"none","mood":"","tense":"","pronoun":"","root_verb":""}
+            return conjugation
 
 def indicative_preterite_third_person_singular(root_verb):
     try:
         conjugation = irregulars_dictionary[root_verb]["indicative"]["preterite"]["usted"]
-        return  {"result":conjugation,"flag":"irregular","mood":"","tense":"","pronoun":"","root_verb":""}
+        return conjugation
     except:
         if root_verb[-2:] == "ar":
             conjugation = root_verb[:-2] + "ó"
-            return {"result":conjugation,"flag":"none","mood":"","tense":"","pronoun":"","root_verb":""}
+            return conjugation
         if root_verb[-2:] == "er" or "ir":
             conjugation = root_verb[:-2] + "ió"
-            return {"result":conjugation,"flag":"none","mood":"","tense":"","pronoun":"","root_verb":""}
+            return conjugation
 
 def indicative_preterite_third_person_plural(root_verb):
     try:
         conjugation = irregulars_dictionary[root_verb]["indicative"]["preterite"]["ustedes"]
-        return  {"result":conjugation,"flag":"irregular","mood":"","tense":"","pronoun":"","root_verb":""}
+        return conjugation
     except:
         if root_verb[-2:] == "ar":
             conjugation = root_verb[:-2] + "aron"
-            return {"result":conjugation,"flag":"none","mood":"","tense":"","pronoun":"","root_verb":""}
+            return conjugation
         if root_verb[-2:] == "er" or "ir":
             conjugation = root_verb[:-2] + "ieron"
-            return {"result":conjugation,"flag":"none","mood":"","tense":"","pronoun":"","root_verb":""}
+            return conjugation
 
 def indicative_preterite(root_verb, pronoun):
     if pronoun == "yo":

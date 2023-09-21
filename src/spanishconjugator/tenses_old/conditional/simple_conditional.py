@@ -3,56 +3,56 @@ from spanishconjugator.irregulars.irregular_dict              import irregulars_
 def conditional_simple_conditional_first_person_singular(root_verb):
     try:
         conjugation = irregulars_dictionary[root_verb]["conditional"]["simple_conditional"]["yo"]
-        return  {"result":conjugation,"flag":"irregular","mood":"","tense":"","pronoun":"","root_verb":""}
+        return conjugation
     except:
         if root_verb[-2:] == "ar" or "er" or "ir":
             conjugation = root_verb + "ía"
-            return {"result":conjugation,"flag":"none","mood":"","tense":"","pronoun":"","root_verb":""}
+            return conjugation
 
 def conditional_simple_conditional_first_person_plural(root_verb):
     try:
         conjugation = irregulars_dictionary[root_verb]["conditional"]["simple_conditional"]["nosotros"]
-        return  {"result":conjugation,"flag":"irregular","mood":"","tense":"","pronoun":"","root_verb":""}
+        return conjugation
     except:
         if root_verb[-2:] == "ar" or "er" or "ir":
             conjugation = root_verb + "íamos"
-            return {"result":conjugation,"flag":"none","mood":"","tense":"","pronoun":"","root_verb":""}
+            return conjugation
 
 def conditional_simple_conditional_second_person_singular(root_verb):
     try:
         conjugation = irregulars_dictionary[root_verb]["conditional"]["simple_conditional"]["tu"]
-        return  {"result":conjugation,"flag":"irregular","mood":"","tense":"","pronoun":"","root_verb":""}
+        return conjugation
     except:
         if root_verb[-2:] == "ar" or "er" or "ir":
             conjugation = root_verb + "ías"
-            return {"result":conjugation,"flag":"none","mood":"","tense":"","pronoun":"","root_verb":""}
+            return conjugation
 
 def conditional_simple_conditional_second_person_plural(root_verb):
     try:
         conjugation = irregulars_dictionary[root_verb]["conditional"]["simple_conditional"]["vosotros"]
-        return  {"result":conjugation,"flag":"irregular","mood":"","tense":"","pronoun":"","root_verb":""}
+        return conjugation
     except:
         if root_verb[-2:] == "ar" or "er" or "ir":
             conjugation = root_verb + "íais"
-            return {"result":conjugation,"flag":"none","mood":"","tense":"","pronoun":"","root_verb":""}
+            return conjugation
 
 def conditional_simple_conditional_third_person_singular(root_verb):
     try:
         conjugation = irregulars_dictionary[root_verb]["conditional"]["simple_conditional"]["usted"]
-        return  {"result":conjugation,"flag":"irregular","mood":"","tense":"","pronoun":"","root_verb":""}
+        return conjugation
     except:
         if root_verb[-2:] == "ar" or "er" or "ir":
             conjugation = root_verb + "ía"
-            return {"result":conjugation,"flag":"none","mood":"","tense":"","pronoun":"","root_verb":""}
+            return conjugation
 
 def conditional_simple_conditional_third_person_plural(root_verb):
     try:
         conjugation = irregulars_dictionary[root_verb]["conditional"]["simple_conditional"]["ustedes"]
-        return  {"result":conjugation,"flag":"irregular","mood":"","tense":"","pronoun":"","root_verb":""}
+        return conjugation
     except:
         if root_verb[-2:] == "ar" or "er" or "ir":
             conjugation = root_verb + "ían"
-            return {"result":conjugation,"flag":"none","mood":"","tense":"","pronoun":"","root_verb":""}
+            return conjugation
 
 def conditional_simple_conditional(root_verb, pronoun):
     if pronoun == "yo":

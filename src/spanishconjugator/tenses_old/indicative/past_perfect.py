@@ -3,74 +3,74 @@ from spanishconjugator.irregulars.irregular_dict              import irregulars_
 def indicative_past_perfect_first_person_singular(root_verb):
     try:
         conjugation = irregulars_dictionary[root_verb]["indicative"]["past_perfect"]["yo"]
-        return  {"result":conjugation,"flag":"irregular","mood":"","tense":"","pronoun":"","root_verb":""}
+        return conjugation
     except:
         if root_verb[-2:] == "ar":
             conjugation = root_verb[:-2] + "ado"
-            return {"result":"había " + conjugation,"flag":"none","mood":"","tense":"","pronoun":"","root_verb":""}
+            return "había " + conjugation
         if root_verb[-2:] == "er" or "ir":
             conjugation = root_verb[:-2] + "ido"
-            return {"result":"había " + conjugation,"flag":"none","mood":"","tense":"","pronoun":"","root_verb":""}
+            return "había " + conjugation
 
 def indicative_past_perfect_first_person_plural(root_verb):
     try:
         conjugation = irregulars_dictionary[root_verb]["indicative"]["past_perfect"]["nosotros"]
-        return  {"result":conjugation,"flag":"irregular","mood":"","tense":"","pronoun":"","root_verb":""}
+        return conjugation
     except:
         if root_verb[-2:] == "ar":
             conjugation = root_verb[:-2] + "ado"
-            return {"result":"habíamos " + conjugation,"flag":"none","mood":"","tense":"","pronoun":"","root_verb":""}
+            return "habíamos " + conjugation
         if root_verb[-2:] == "er" or "ir":
             conjugation = root_verb[:-2] + "ido"
-            return {"result":"habíamos " + conjugation,"flag":"none","mood":"","tense":"","pronoun":"","root_verb":""}
+            return "habíamos " + conjugation
 
 def indicative_past_perfect_second_person_singular(root_verb):
     try:
         conjugation = irregulars_dictionary[root_verb]["indicative"]["past_perfect"]["tu"]
-        return  {"result":conjugation,"flag":"irregular","mood":"","tense":"","pronoun":"","root_verb":""}
+        return conjugation
     except:
         if root_verb[-2:] == "ar":
                 conjugation = root_verb[:-2] + "ado"
-                return {"result":"habías " + conjugation,"flag":"none","mood":"","tense":"","pronoun":"","root_verb":""}
+                return "habías " + conjugation
         if root_verb[-2:] == "er" or "ir":
             conjugation = root_verb[:-2] + "ido"
-            return {"result":"habías " + conjugation,"flag":"none","mood":"","tense":"","pronoun":"","root_verb":""}
+            return "habías " + conjugation
 
 def indicative_past_perfect_second_person_plural(root_verb):
     try:
         conjugation = irregulars_dictionary[root_verb]["indicative"]["past_perfect"]["vosotros"]
-        return  {"result":conjugation,"flag":"irregular","mood":"","tense":"","pronoun":"","root_verb":""}
+        return conjugation
     except:
         if root_verb[-2:] == "ar":
             conjugation = root_verb[:-2] + "ado"
-            return {"result":"habíais " + conjugation,"flag":"none","mood":"","tense":"","pronoun":"","root_verb":""}
+            return "habíais " + conjugation
         if root_verb[-2:] == "er" or "ir":
             conjugation = root_verb[:-2] + "ido"
-            return {"result":"habíais " + conjugation,"flag":"none","mood":"","tense":"","pronoun":"","root_verb":""}
+            return "habíais " + conjugation
 
 def indicative_past_perfect_third_person_singular(root_verb):
     try:
         conjugation = irregulars_dictionary[root_verb]["indicative"]["past_perfect"]["usted"]
-        return  {"result":conjugation,"flag":"irregular","mood":"","tense":"","pronoun":"","root_verb":""}
+        return conjugation
     except:
         if root_verb[-2:] == "ar":
             conjugation = root_verb[:-2] + "ado"
-            return {"result":"había " + conjugation,"flag":"none","mood":"","tense":"","pronoun":"","root_verb":""}
+            return "había " + conjugation
         if root_verb[-2:] == "er" or "ir":
             conjugation = root_verb[:-2] + "ido"
-            return {"result":"había " + conjugation,"flag":"none","mood":"","tense":"","pronoun":"","root_verb":""}
+            return "había " + conjugation
 
 def indicative_past_perfect_third_person_plural(root_verb):
     try:
         conjugation = irregulars_dictionary[root_verb]["indicative"]["past_perfect"]["ustedes"]
-        return  {"result":conjugation,"flag":"irregular","mood":"","tense":"","pronoun":"","root_verb":""}
+        return conjugation
     except:
         if root_verb[-2:] == "ar":
             conjugation = root_verb[:-2] + "ado"
-            return {"result":"habían " + conjugation,"flag":"none","mood":"","tense":"","pronoun":"","root_verb":""}
+            return "habían " + conjugation
         if root_verb[-2:] == "er" or "ir":
             conjugation = root_verb[:-2] + "ido"
-            return {"result":"habían " + conjugation,"flag":"none","mood":"","tense":"","pronoun":"","root_verb":""}
+            return "habían " + conjugation
 
 def indicative_past_perfect(root_verb, pronoun):
     if pronoun == "yo":

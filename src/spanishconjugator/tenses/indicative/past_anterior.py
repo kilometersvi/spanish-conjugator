@@ -3,47 +3,47 @@ def indicative_past_anterior(root_verb, pronoun):
     if pronoun == "yo":
         if root_verb[-2:] == "ar":
             conjugation = root_verb[:-2] + "ado"
-            return "hube " + conjugation
+            return {"result":"hube " + conjugation,"flag":"none","mood":"","tense":"","pronoun":"","root_verb":""}
         if root_verb[-2:] == "er" or "ir":
             conjugation = root_verb[:-2] + "ido"
-            return "hube " + conjugation
+            return {"result":"hube " + conjugation,"flag":"none","mood":"","tense":"","pronoun":"","root_verb":""}
 
     if pronoun == "tu":
         if root_verb[-2:] == "ar":
             conjugation = root_verb[:-2] + "ado"
-            return "hubiste " + conjugation
+            return {"result":"hubiste " + conjugation,"flag":"none","mood":"","tense":"","pronoun":"","root_verb":""}
         if root_verb[-2:] == "er" or "ir":
             conjugation = root_verb[:-2] + "ido"
-            return "hubiste " + conjugation
+            return {"result":"hubiste " + conjugation,"flag":"none","mood":"","tense":"","pronoun":"","root_verb":""}
 
     if pronoun == "usted":
         if root_verb[-2:] == "ar":
             conjugation = root_verb[:-2] + "ado"
-            return "hubo " + conjugation
+            return {"result":"hubo " + conjugation,"flag":"none","mood":"","tense":"","pronoun":"","root_verb":""}
         if root_verb[-2:] == "er" or "ir":
             conjugation = root_verb[:-2] + "ido"
-            return "hubo " + conjugation
+            return {"result":"hubo " + conjugation,"flag":"none","mood":"","tense":"","pronoun":"","root_verb":""}
 
     if pronoun == "nosotros":
         if root_verb[-2:] == "ar":
             conjugation = root_verb[:-2] + "ado"
-            return "hubimos " + conjugation
+            return {"result":"hubimos " + conjugation,"flag":"none","mood":"","tense":"","pronoun":"","root_verb":""}
         if root_verb[-2:] == "er" or "ir":
             conjugation = root_verb[:-2] + "ido"
-            return "hubimos " + conjugation
+            return {"result":"hubimos " + conjugation,"flag":"none","mood":"","tense":"","pronoun":"","root_verb":""}
 
     if pronoun == "vosotros":
         if root_verb[-2:] == "ar":
             conjugation = root_verb[:-2] + "ado"
-            return "hubisteis " + conjugation
+            return {"result":"hubisteis " + conjugation,"flag":"none","mood":"","tense":"","pronoun":"","root_verb":""}
         if root_verb[-2:] == "er" or "ir":
             conjugation = root_verb[:-2] + "ido"
-            return "hubisteis " + conjugation
+            return {"result":"hubisteis " + conjugation,"flag":"none","mood":"","tense":"","pronoun":"","root_verb":""}
 
     if pronoun == "ustedes":
         if root_verb[-2:] == "ar":
             conjugation = root_verb[:-2] + "ado"
-            return "hubieron " + conjugation
+            return {"result":"hubieron " + conjugation,"flag":"none","mood":"","tense":"","pronoun":"","root_verb":""}
         if root_verb[-2:] == "er" or "ir":
             conjugation = root_verb[:-2] + "ido"
-            return "hubieron " + conjugation
+            return {"result":"hubieron " + conjugation,"flag":"none","mood":"","tense":"","pronoun":"","root_verb":""}
