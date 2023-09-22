@@ -9,21 +9,22 @@ def test_present_indicative_ar():
     expected_tu = "hablas"
     expected_yo = "hablo"
     expected_nos = "hablamos"
+    
     assert (
-        Conjugator().conjugate("hablar", "present", "indicative")["yo"] == expected_yo
+        Conjugator().conjugate("hablar", "present", "indicative","yo") == expected_yo
     )
     assert (
-        Conjugator().conjugate("hablar", "present", "indicative")["el/ella/usted"]
+        Conjugator().conjugate("hablar", "present", "indicative","el")
         == expected_el
     )
     assert (
-        Conjugator().conjugate("hablar", "present", "indicative")["ellos/ellas/ustedes"]
+        Conjugator().conjugate("hablar", "present", "indicative","ellos")
         == expected_ellos
     )
     assert (
-        Conjugator().conjugate("hablar", "present", "indicative")["tu"] == expected_tu
+        Conjugator().conjugate("hablar", "present", "indicative","tu") == expected_tu
     )
     assert (
-        Conjugator().conjugate("hablar", "present", "indicative")["nosotros"]
+        Conjugator().conjugate("hablar", "present", "indicative","nosotros")
         == expected_nos
     )
