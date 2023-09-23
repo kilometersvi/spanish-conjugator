@@ -14,6 +14,22 @@ participle = {
 SPACE = " "
 irregulars_dictionary = {
     'ir':{
+        'imperative':{
+            'affirmative':{
+                'tu':'ve',
+                'usted':'vaya',
+                'nosotros':'vamos',
+                'vosotros':'id',
+                'ustedes':'vayan'
+            },
+            'negative':{
+                'tu':'vayas',
+                'usted':'vaya',
+                'nosotros':'vayamos',
+                'vosotros':'vayáis',
+                'ustedes':'vayan'
+            },
+        },
         'indicative':{
             'present':{
                 'yo':'voy',
@@ -38,7 +54,7 @@ irregulars_dictionary = {
                 'nosotros':'fuimos',
                 'vosotros':'fuisteis',
                 'ustedes':'fueron'
-            }, 
+            },
             'present_perfect' : {
                 'yo':haber_present[0] + SPACE + participle["past"]["ir"],
                 'tu':haber_present[1] + SPACE + participle["past"]["ir"],
@@ -58,14 +74,24 @@ irregulars_dictionary = {
         }
     },
     'ser':{
-        'indicative':{
+        'imperative':{
+            'affirmative':{
+                'usted':'sea',
+                'ustedes':'sean'
+            },
+            'negative':{
+                'tu':'sé',
+                'usted':'sea',
+                'ustedes':'sean'
+            },
+        },'indicative':{
             'present':{
                 'yo':'soy',
                 'tu':'eres',
                 'usted':'es',
                 'nosotros':'somos',
                 'vosotros':'sois',
-                'ustedes':'son'    
+                'ustedes':'son'
             },
             'imperfect':{
                 'yo':'era',
@@ -73,7 +99,7 @@ irregulars_dictionary = {
                 'usted':'era',
                 'nosotros':'éramos',
                 'vosotros':'erais',
-                'ustedes':'eran'    
+                'ustedes':'eran'
             },
             'preterite':{
                 'yo':'fui',
@@ -130,6 +156,18 @@ irregulars_dictionary = {
         }
     },
     'estar':{
+        'imperative':{
+            'affirmative':{
+                'tu':'está',
+                'usted':'esté',
+                'ustedes':'estén'
+            },
+            'negative':{
+                'tu':'estés',
+                'usted':'esté',
+                'ustedes':'estén'
+            },
+        },
         'indicative':{
             'present':{
                 'yo':'estoy',
@@ -148,6 +186,22 @@ irregulars_dictionary = {
         }
     },
     'venir':{
+        'imperative':{
+            'affirmative':{
+                'tu':'ven'
+                'usted':'venga',
+                'nosotros':'vengamos',
+                'vosotros':'vengaís'
+                'ustedes':'vengan'
+            },
+            'negative':{
+                'tu':'vengas',
+                'usted':'venga',
+                'nosotros':'vengamos',
+                'vosotros':'vengaís',
+                'ustedes':'vengan'
+            },
+        },
         'indicative':{
             'present':{
                 'yo':'vengo',
@@ -210,6 +264,20 @@ irregulars_dictionary = {
         }
     },
     'tener':{
+        'imperative':{
+            'affirmative':{
+                'tu':'ten',
+                'usted':'tenga',
+                'nosotros':'tengamos'
+                'ustedes':'tengan'
+            },
+            'negative':{
+                'tu':'tengas',
+                'nosotros','tengamos'
+                'usted':'tenga',
+                'ustedes':'tengan'
+            },
+        },
         'indicative':{
             'present':{
                 'yo':'tengo',
@@ -246,6 +314,21 @@ irregulars_dictionary = {
         }
     },
     'saber':{
+        'imperative':{
+            'affirmative':{
+                'tu':'sabe',
+                'usted':'sepa',
+                'nosotros':'sepamos',
+                'ustedes':'sepan'
+            },
+            'negative':{
+                'tu':'sepas',
+                'usted':'sepa',
+                'nosotros':'sepamos',
+                'vosotros':'sepaís',
+                'ustedes':'sepan'
+            },
+        },
         'indicative':{
             'present':{
                 'yo':'sé'
@@ -374,9 +457,23 @@ irregulars_dictionary = {
                 'ustedes':haber_past[5] + SPACE + participle["past"]["escribir"]
             }
         }
-        
+
     },
     "decir": {
+        'imperative':{
+            'affirmative':{
+                'tu':'di',
+                'usted':'diga',
+                'nosotros':'digamos'
+                'ustedes':'digan'
+            },
+            'negative':{
+                'tu':'digas',
+                'nosotros','digamos'
+                'usted':'digan',
+                'ustedes':'digan'
+            },
+        },
         "indicative": {
             'present': {
                 'yo': "digo",
@@ -418,7 +515,7 @@ irregulars_dictionary = {
                 'vosotros': 'diríais'
             },
         }
-        
+
     },
     "caer":{
         "indicative": {
@@ -433,7 +530,7 @@ irregulars_dictionary = {
                 "yo": "caigo"
             }
         }
-    }, 
+    },
     "apagar": {
         "indicative": {
             "preterite": {
@@ -452,7 +549,21 @@ irregulars_dictionary = {
         }
     },
      "haber": {
-        "indicative": {
+        'imperative':{
+            'affirmative':{
+                'tu':'he',
+                'usted':'haya',
+                'nosotros':'hayamos',
+                'ustedes':'hayan'
+            },
+            'negative':{
+                'tu':'hayas',
+                'usted':'haya',
+                'nosotros':'hayamos',
+                'vosotros':'hayaís'
+                'ustedes':'hayan'
+            },
+        },"indicative": {
             "present": {
                 'yo':haber_present[0],
                 'tu':haber_present[1],
@@ -472,6 +583,20 @@ irregulars_dictionary = {
         }
     },
     "salir": {
+        'imperative':{
+            'affirmative':{
+                'tu':'sal',
+                'usted':'salga',
+                'nosotros':'salgamos'
+                'ustedes':'salgan'
+            },
+            'negative':{
+                'tu':'salgas',
+                'nosotros','digamos'
+                'usted':'salga',
+                'ustedes':'salgan'
+            },
+        },
         "indicative": {
             "present": {
                 'yo':"salgo",
@@ -479,6 +604,20 @@ irregulars_dictionary = {
         }
     },
     'hacer':{
+        'imperative':{
+            'affirmative':{
+                'tu':'haz',
+                'usted':'haga',
+                'nosotros':'hagamos'
+                'ustedes':'hagan'
+            },
+            'negative':{
+                'tu':'hagas',
+                'nosotros','hagamos'
+                'usted':'haga',
+                'ustedes':'hagan'
+            },
+        },
         'indicative':{
             'present':{
                 'yo':'hago'
@@ -490,7 +629,7 @@ irregulars_dictionary = {
                 'nosotros':'hicimos',
                 'vosotros':'hicisteis',
                 'ustedes':'hicieron'
-            }, 
+            },
             'future' : {
                 'yo':'haré',
                 'tu':'harás',
@@ -559,7 +698,7 @@ irregulars_dictionary = {
                 "usted": "oye",
                 "ustedes": "oyen",
                 "nosotros": "oímos"
-            }, 
+            },
             "preterite": {
                 "tu": "oíste",
                 "usted": "oyó",
@@ -588,10 +727,20 @@ irregulars_dictionary = {
         }
     },
     "dar": {
-        "indicative": {
+        'imperative':{
+            'affirmative':{
+                'usted':'dé',
+                'ustedes':'den'
+            },
+            'negative':{
+                'usted':'dé',
+                'vosotros':'deis',
+                'ustedes':'den'
+            },
+        },"indicative": {
             "present": {
                 "yo": "doy"
-            }, 
+            },
             "preterite": {
                 "yo": "di",
                 "tu": "diste",
@@ -618,7 +767,7 @@ irregulars_dictionary = {
                 "tu": "comienzas",
                 "usted": "comienza",
                 "ustedes": "comienzan"
-            }, 
+            },
             "preterite": {
                 "yo": "comencé"
             }

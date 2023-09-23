@@ -160,7 +160,7 @@ class Conjugator:
 
         if tense == "affirmative":
             if mood == "imperative":
-                c_dt = affirmative(root_verb, pronoun)
+                c_dt = affirmative_wrapper(root_verb, pronoun)
 
 
         #---------------------------------- Negative Imperative -------------------------------------- #
@@ -227,3 +227,11 @@ class Conjugator:
         c_dt["pronoun"] = pronoun
 
         return c_dt
+
+    def affirmative_wrapper(root_verb, pronoun):
+        if pronoun in ["usted", "ustedes"]:
+            p_i = self.conjugate(root_verb, "imperfect", "present", pronoun="yo", return_attrs=False)
+            if p_i != "Error - verb not found":
+                return affirmative(p_i, pronoun)
+        else:
+            return affirmative(p_i, pronoun)
