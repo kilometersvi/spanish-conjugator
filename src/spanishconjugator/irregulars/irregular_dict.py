@@ -188,10 +188,10 @@ irregulars_dictionary = {
     'venir':{
         'imperative':{
             'affirmative':{
-                'tu':'ven'
+                'tu':'ven',
                 'usted':'venga',
                 'nosotros':'vengamos',
-                'vosotros':'vengaís'
+                'vosotros':'vengaís',
                 'ustedes':'vengan'
             },
             'negative':{
@@ -268,12 +268,12 @@ irregulars_dictionary = {
             'affirmative':{
                 'tu':'ten',
                 'usted':'tenga',
-                'nosotros':'tengamos'
+                'nosotros':'tengamos',
                 'ustedes':'tengan'
             },
             'negative':{
                 'tu':'tengas',
-                'nosotros','tengamos'
+                'nosotros','tengamos',
                 'usted':'tenga',
                 'ustedes':'tengan'
             },
@@ -357,7 +357,7 @@ irregulars_dictionary = {
                 'yo':'puedo',
                 'tu':'puedes',
                 'usted':'puede',
-                'ustedes':'pueden',
+                'ustedes':'pueden'
             },
             'preterite':{
                 'yo':'pude',
@@ -464,12 +464,12 @@ irregulars_dictionary = {
             'affirmative':{
                 'tu':'di',
                 'usted':'diga',
-                'nosotros':'digamos'
+                'nosotros':'digamos',
                 'ustedes':'digan'
             },
             'negative':{
                 'tu':'digas',
-                'nosotros','digamos'
+                'nosotros','digamos',
                 'usted':'digan',
                 'ustedes':'digan'
             },
@@ -560,7 +560,7 @@ irregulars_dictionary = {
                 'tu':'hayas',
                 'usted':'haya',
                 'nosotros':'hayamos',
-                'vosotros':'hayaís'
+                'vosotros':'hayaís',
                 'ustedes':'hayan'
             },
         },"indicative": {
@@ -587,12 +587,12 @@ irregulars_dictionary = {
             'affirmative':{
                 'tu':'sal',
                 'usted':'salga',
-                'nosotros':'salgamos'
+                'nosotros':'salgamos',
                 'ustedes':'salgan'
             },
             'negative':{
                 'tu':'salgas',
-                'nosotros','digamos'
+                'nosotros','digamos',
                 'usted':'salga',
                 'ustedes':'salgan'
             },
@@ -608,12 +608,12 @@ irregulars_dictionary = {
             'affirmative':{
                 'tu':'haz',
                 'usted':'haga',
-                'nosotros':'hagamos'
+                'nosotros':'hagamos',
                 'ustedes':'hagan'
             },
             'negative':{
                 'tu':'hagas',
-                'nosotros','hagamos'
+                'nosotros','hagamos',
                 'usted':'haga',
                 'ustedes':'hagan'
             },
