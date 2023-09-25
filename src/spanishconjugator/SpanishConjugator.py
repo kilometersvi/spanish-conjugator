@@ -230,7 +230,7 @@ class Conjugator:
 
     def affirmative_wrapper(root_verb, pronoun):
         if pronoun in ["usted", "ustedes"]:
-            p_i = self.conjugate(root_verb, "imperfect", "present", pronoun="yo", return_attrs=False)
+            p_i = self.conjugate(root_verb, "indicative", "present", pronoun="yo", return_attrs=False)
             if p_i != "Error - verb not found":
                 return affirmative(p_i, pronoun)
         else:
