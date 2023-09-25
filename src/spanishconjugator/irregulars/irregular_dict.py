@@ -273,7 +273,7 @@ irregulars_dictionary = {
             },
             'negative':{
                 'tu':'tengas',
-                'nosotros','tengamos',
+                'nosotros':'tengamos',
                 'usted':'tenga',
                 'ustedes':'tengan'
             },
@@ -469,7 +469,7 @@ irregulars_dictionary = {
             },
             'negative':{
                 'tu':'digas',
-                'nosotros','digamos',
+                'nosotros':'digamos',
                 'usted':'digan',
                 'ustedes':'digan'
             },
@@ -592,7 +592,7 @@ irregulars_dictionary = {
             },
             'negative':{
                 'tu':'salgas',
-                'nosotros','digamos',
+                'nosotros':'digamos',
                 'usted':'salga',
                 'ustedes':'salgan'
             },
@@ -613,7 +613,7 @@ irregulars_dictionary = {
             },
             'negative':{
                 'tu':'hagas',
-                'nosotros','hagamos',
+                'nosotros':'hagamos',
                 'usted':'haga',
                 'ustedes':'hagan'
             },
